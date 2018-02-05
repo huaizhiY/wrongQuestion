@@ -6,6 +6,6 @@
 ##布局使用bootstrap
 
 >使用功能介绍:
->[bootstrap样式](https://v3.bootcss.com/css/)
->[bootstrap模态框](https://v3.bootcss.com/javascript/#modals)
->[bootstrap弹出框](https://v3.bootcss.com/javascript/#popovers)
+>[bootstrap样式](https://v3.bootcss.com/css/);
+>[bootstrap模态框](https://v3.bootcss.com/javascript/#modals);
+>[bootstrap弹出框](https://v3.bootcss.com/javascript/#popovers);
