@@ -92,8 +92,22 @@
 	}
 
 
-	//删除功能;
+	//删除功能; (事件委托);
 
+	tbody.onclick = function(event){
+		let e = event || window.event;
+		let target = e.target || e.srcElement.target;
+		if(target.getAttribute("class") == "btn"){
+			remove_item(target.getAttribute("data-id"));
+			target.parentNode.parentNode.remove();
+		}
+	}
 
+	function remove_item(id){
+		//console.log(id)
+		xhr.post("interface/removeitem.php","id="+id,function(){
+			console.log("删除成功");
+		})
+	}
 
 })()
