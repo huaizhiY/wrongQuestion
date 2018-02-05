@@ -12,5 +12,5 @@
 	    die("连接失败: " . $conn->connect_error);
 	}	
 	
-
+ 
  ?>

@@ -1,5 +1,17 @@
 <?php 
 
+	/*
+		
+		字段名称 ：
+
+				title => 问题标题
+				details => 问题详情
+				idea => 问题备注（个人问题见解）
+
+
+
+	*/
+	
 	//数据插入更新
 
 	require "model/_connect.php";
@@ -17,4 +29,6 @@
 
 	$stmt->close();
 	$conn->close();
+
+	echo $title.$details.$idea;
 ?>

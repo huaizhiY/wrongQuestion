@@ -1,7 +1,7 @@
 
-var $ = {};
+var xhr = {};
 
-$.get = function(url,callback){
+xhr.get = function(url,callback){
 	var xhr = new XMLHttpRequest();
 		xhr.open("GET",url);
 		xhr.send(null);
@@ -13,9 +13,9 @@ $.get = function(url,callback){
 		return xhr;
 }
 
-$.post = function(url,data,callback){
+xhr.post = function(url,data,callback){
 	var xhr = new XMLHttpRequest();
-		xhr.open("GET",url);
+		xhr.open("POST",url);
 		xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded")
 		xhr.send(data);
 		xhr.onload = function(){
